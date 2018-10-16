@@ -1,19 +1,19 @@
 import React from 'react';
 
-import headerCss from '../../../css/mainLayout/header/header.css';
+import '../../../css/mainLayout/header/header.css';
 import Logo from '../../../images/notebook.png';
 
 export default class Header extends React.Component {
-    constructor(props) {
-        super(props);
-    }
+    // constructor(props) {
+    //     super(props);
+    // }
 
     render() {
         return (
             <div className="header">
                 <nav className="navbar fixed-top navbar-expand-lg navbar-light bg-success">
                     <a className="navbar-brand" href="/#home-top">
-                        <img src={Logo} className="logo-image"/>
+                        <img src={Logo} className="logo-image" alt="logo"/>
                     </a>
                     <button
                         className="navbar-toggler"

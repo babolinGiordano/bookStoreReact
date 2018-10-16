@@ -1,15 +1,15 @@
 import React from 'react';
 
-import homeCss from '../../css/home/home.css';
+import '../../css/home/home.css';
 import FirstSlideImage from '../../images/book1.jpg';
 import SecondSlideImage from '../../images/book2.jpg';
 import ThirdSlideImage from '../../images/book3.jpg';
 import BookPassionate from '../../images/book-passionate.jpg';
 
 export default class Home extends React.Component {
-  constructor(props) {
-    super(props);
-  }
+  // constructor(props) {
+  //   super(props);
+  // }
 
   render() {
     return (

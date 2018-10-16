@@ -1,17 +1,14 @@
 import React from 'react';
 
-import footerCss from '../../../css/mainLayout/footer/footer.css';
+import '../../../css/mainLayout/footer/footer.css';
 
 export default class Footer extends React.Component {
-    constructor(props) {
-        super(props);
-    }
 
     render() {
         return(
-            <div className = "container-fluid footer">
-                <div className = "row">
-                    <div className = "col mr-auto">
+            <div className="container-fluid footer">
+                <div className="row">
+                    <div className="col mr-auto">
                         <p>Book Seller Company</p>
                         <p>Via Paolo Dell'Aguzzo, 56</p>
                         <p>Senigallia, Ancona, Italia</p>

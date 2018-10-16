@@ -1,5 +1,6 @@
   import React from "react";
   import LoginService from './loginService';
+  import CustomInput from '../../common/input/customInput';
 
   export default class Login extends React.Component{
     constructor(props){
@@ -91,20 +92,26 @@
                     <div className = "col-6 mr-auto ml-auto">
                         <form onSubmit={this.onSubmit.bind(this)}>
                           <div className = "form-group">
-                              <input
+                              <CustomInput
+                                  type="text"
+                                  placeholder="username"
+                                  value = {this.state.username || ''}
+                                  onChange = {this.changeText.bind(this, "username")}
+                                  label="Username"/>
+                                {/* <input
                                   type="text"
                                   className = "form-control"
                                   placeholder="username"
                                   value = {this.state.username || ''}
-                                  onChange = {this.changeText.bind(this, "username")}/>
+                                  onChange = {this.changeText.bind(this, "username")}/> */}
                           </div>
                           <div className = "form-group">
-                              <input
+                              <CustomInput
                                 type="password"
-                                className = "form-control"
                                 placeholder="password"
                                 value = {this.state.password}
-                                onChange = {this.changeText.bind(this, "password")}/>
+                                onChange = {this.changeText.bind(this, "password")}
+                                label="Password"/>
                           </div>
                           <button
                               type="submit"
